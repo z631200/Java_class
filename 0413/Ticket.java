@@ -6,13 +6,12 @@ public class Ticket {
     public Ticket(String date, int price){
         setDate(date);
         setPrice(price);
-	price = 10;
     }
 
     public Ticket(String date, String name){
         setDate(date);
         setName(name);
-        
+        price = 10；
     }
 
     //////
@@ -40,7 +39,7 @@ public class Ticket {
     //////
     
     public String toString(){
-        return getDate() + ((price != 0)? "售出" : "送出") + "一張票。" +  ((price != 0)? "票價:"+getPrice() : "貴賓:"+getName());
+        return getDate() + ((price == 0)? "售出" : "送出") + "一張票。" +  ((price == 0)? "票價:"+getPrice() : "貴賓:"+getName());
     }
 
 
