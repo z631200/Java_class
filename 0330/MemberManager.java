@@ -7,8 +7,8 @@ public class MemberManager{
         m[3] = new Member("Wu", 40000);
         m[4] = new Member("Lin", 40000);
         
-        String output="";//Àx¦s©Ò¦³·|­û¸ê°T
-        double total = 0.0; // for total fees
+        String output="";
+        double total = 0.0; 
         for(int i=0; i<m.length; i++){
             output += m[i].toString()+"\n";
             total += m[i].payFee();
