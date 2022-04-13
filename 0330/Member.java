@@ -10,7 +10,9 @@ public class Member {
     public Member (String name, double income){
         setName(name);
         setIncome(income); 
-   }
+    }
+    //without void/string/int... , "Member" seem to be asked have same name as "class name(Member)"
+   
   
     public String toString(){
         return "Name: "+getName()+"\tIncome: "+getIncome()+"\t   Membership fee: "+payFee();
