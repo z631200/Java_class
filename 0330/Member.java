@@ -1,5 +1,5 @@
 public class Member {
-    private String name;
+    private String name; //"private" = only use in this class
     private double income;
 
     public String getName(){ return name;}
