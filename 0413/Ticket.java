@@ -13,9 +13,7 @@ public class Ticket {
         setName(name);
         price = 10；
     }
-
     //////
-
     public void setDate(String date){
         this.date = date;
     }
@@ -36,11 +34,8 @@ public class Ticket {
     public String getName(){
         return name;
     }
-    //////
-    
+    //////    
     public String toString(){
         return getDate() + ((price == 0)? "售出" : "送出") + "一張票。" +  ((price == 0)? "票價:"+getPrice() : "貴賓:"+getName());
     }
-
-
 }
